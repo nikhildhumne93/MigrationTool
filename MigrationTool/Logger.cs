@@ -27,7 +27,7 @@ namespace MigrationTool
             Console.WriteLine(massage);
             using (StreamWriter sw = new StreamWriter(_filepath, true))
             {
-                sw.WriteLine(massage);
+                sw.WriteLine(DateTime.UtcNow.ToString() + " " + massage);
             }
         }
 
@@ -47,7 +47,7 @@ namespace MigrationTool
             Console.WriteLine(massage);
             using (StreamWriter sw = new StreamWriter(_exceptionFilepath, true))
             {
-                sw.WriteLine(massage);
+                sw.WriteLine(DateTime.UtcNow.ToString() + " " + massage);
             }
         }
     }
