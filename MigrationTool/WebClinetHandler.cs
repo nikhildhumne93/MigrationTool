@@ -115,7 +115,7 @@ namespace MigrationTool
                 }
                 else
                 {
-                    Logger.WriteException("Failed storing data in SQL for " + fromFileName + " StatusCode: " + _httpResponse.StatusCode + " ReasonPhrase: " + _httpResponse.ReasonPhrase);
+                    Logger.WriteException("Failed storing data in No SQL for " + fromFileName + " StatusCode: " + _httpResponse.StatusCode + " ReasonPhrase: " + _httpResponse.ReasonPhrase);
                 }
             }
             catch (Exception ex)
