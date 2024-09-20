@@ -42,7 +42,8 @@ namespace MigrationTool.DTOs
         public int viewCount { get; set; }
         public string formPublishRefIdStart { get; set; }
         public string formPublishRefIdRuleTitle { get; set; }
-        public int formPublishRefIdRuleId { get; set; }
+        public string formPublishRefIdRuleId { get; set; }
+        public string formPublishRefIdRuleLabel { get; set; }
         public string createdById { get; set; }
         public string createdBy { get; set; }
         public string createdOnUtc { get; set; }

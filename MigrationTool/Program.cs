@@ -33,6 +33,7 @@ if (getTokenResponseDataDTO == null)
     Environment.Exit(0);
 }
 string _accessToken = getTokenResponseDataDTO.access_token;
+//_accessToken = "eyJhbGciOiJSUzI1NiIsImtpZCI6InZVdnQtVVIxZ295YUZ0YjlYc1FMMWF5NC1HSExXY1VTTjZhZWZkRlllcTQiLCJ0eXAiOiJKV1QifQ.eyJhdWQiOiIxZThkOTA2Zi1mZWY5LTRhYzYtOTIyOS1kMWUxNDJkOGJmYjMiLCJpc3MiOiJodHRwczovL2lmbG93c2Rldi5iMmNsb2dpbi5jb20vN2NmMTc0MTUtMTZhMS00NTY5LTgxMmMtZmNlY2E3NTNhY2MyL3YyLjAvIiwiZXhwIjoxNzI2ODMyNTA2LCJuYmYiOjE3MjY4Mjg5MDYsInN1YiI6ImJlYmVhMWY3LWIwNjEtNGVlZS05ZGFhLTUyOTEyOGI4NDhmNSIsImVtYWlsIjoiYWJoaXNoZWsuYW5hbmQuanNyQGdtYWlsLmNvbSIsIm5hbWUiOiJBYmhpc2hlayBBbmFuZCBHbWFpbCIsImdpdmVuX25hbWUiOiJBYmhpc2hlayIsImZhbWlseV9uYW1lIjoiQW5hbmQiLCJpcGFkZHIiOiIyNjAwOjE3MDA6NWM1YTo2MzEwOmY0MGI6ZjM3NDo4OWI0OmQwZmYiLCJ0aWQiOiI3Y2YxNzQxNS0xNmExLTQ1NjktODEyYy1mY2VjYTc1M2FjYzIiLCJjb3JyZWxhdGlvbklkIjoiYmVmMjU2ZDktYjExNy00NWU0LTg0YTUtYmQwMTVmNmU4MWIwIiwibm9uY2UiOiIwMTkyMGYwNS1jMWRiLTdiMDMtYWI2Ny0wNWYxZDIzODIxNWMiLCJzY3AiOiJhcGkuZnVsbC5hY2Nlc3MiLCJhenAiOiIxMDUzMmZkZi0wNDY2LTRmMmEtOWRjNS00YmMzNDE2NzAyZjQiLCJ2ZXIiOiIxLjAiLCJpYXQiOjE3MjY4Mjg5MDZ9.ZkLuxmL8W6Nq_nebrKje1WjEA3_oSls0GoSPH0jldqH0KGMSRL3-o6p9zwrhM8JNvgsT2Cv_kke4_gdE2PKG0B5yMBMCd1BfU-Kz82smEKdC-tWjXrr-3vREizzwYv6pwZYkj9QoftFP6CSwcaS45QGj7X9J_-HUXoah3XkPDx5HE6_3VCyH7PBqPVsOqdBPZTE8pbGGnbbLSZRmyHhYUlDQH7K9TPn-UVXMoomEMOmlsoDWWmghSwZAnACE69ol9PUgwU9T_BQE-S2gaUZDuuAFt95JESGYL909OjgU2mX56Aa-QUc70az4mlPpoP9Nvi-q2y80IksBHbymwoEshA";
 
 Logger.WriteMassage("Access token generated successfully done.");
 #endregion
@@ -114,12 +115,14 @@ Logger.WriteMassage("Excel all row processing done.");
 Console.WriteLine();
 Console.WriteLine();
 Console.WriteLine();
-Logger.WriteMassage("Excel file proccessed count :- " + rowprocessed);
-Logger.WriteMassage("Excel file Failed count :- " + rowProcessedFailed);
-Logger.WriteMassage("Excel file Completed successfuly count :- " + rowCompleted);
+Logger.WriteMassage("Total Excel file proccessed count :- " + rowprocessed);
+Logger.WriteMassage("Total Excel file Failed count :- " + rowProcessedFailed);
+Logger.WriteMassage("Total Excel file Completed successfuly count :- " + rowCompleted);
+Logger.WriteMassage("");
 Logger.WriteMassage("Initiate to insert data in SQL " + intitiateInsetedToSQL);
 Logger.WriteMassage("Failed to insert data in SQL " + rowSQLFailed);
 Logger.WriteMassage("insert data in SQL completed successfuly " + rowInsetedToSQL);
+Logger.WriteMassage("");
 Logger.WriteMassage("Initiate to insert data in MongoDB " + intitiateInsetedToMongo);
 Logger.WriteMassage("Failed to insert data in MongoDB " + rowMongoFailed);
 Logger.WriteMassage("insert data in MongoDB completed successfuly " + rowInseredToMongo);
